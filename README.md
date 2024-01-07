@@ -1,6 +1,6 @@
 # <img src="https://github.com/pizzaboxer/bloxstrap/raw/main/Images/Bloxstrap.png" width="28"/> Ultimate Fast Flags List 
 ##### Version: 4[.](https://github.com/GoingCrazyDude/fastflags-collection/blob/main/README.md)0.1 [1/7/2024]
-* **108 Currently Listed**
+* **106 Currently Listed**
 
  # How to use
 * **Open the [Bloxstrap](https://github.com/pizzaboxer/bloxstrap) Menu**
@@ -450,6 +450,12 @@ High
 ```json
 {
 	"FFlagDebugSimIntegrationStabilityTesting": "True"
+}
+```
+### drunk
+```json
+{
+	"DFIntGeometricStiffnessAlpha": "-100000"
 }
 ```
 ### Breaks glitches stuff
