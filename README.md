@@ -1,10 +1,6 @@
-> [!IMPORTANT]
-> Please report these fflags: **[Physics FPS](https://github.com/devstacking/Epic-Fast-Flags-List#physics-fps)** & **[ESP](https://github.com/devstacking/Epic-Fast-Flags-List#esp1)** <sup>make a bug report or pm in devforum. if pm doesnt work just make a topic on bug reports</sup>
-
 # <img src="https://github.com/pizzaboxer/bloxstrap/raw/main/Images/Bloxstrap.png" width="28"/> Ultimate Fast Flags List 
-##### Version: 3[.](https://github.com/GoingCrazyDude/fastflags-collection/blob/main/README.md)4.1 [1/5/2024]
-* **76 Currently Listed**
-* Added some bloxstrap presets
+##### Version: 4[.](https://github.com/GoingCrazyDude/fastflags-collection/blob/main/README.md)0.0 [1/7/2024]
+* **90 Currently Listed**
 
  # How to use
 * **Open the [Bloxstrap](https://github.com/pizzaboxer/bloxstrap) Menu**
@@ -25,6 +21,13 @@
 <img src="https://github.com/devstacking/Epic-Fast-Flags-List/assets/106433721/0d16e448-4097-44ef-9eef-c445155a4bcb" width="888"/>
 
 # Rendering API
+### Metal
+###### MacOS Only
+```json
+{
+	"FFlagDebugGraphicsPreferMetal": "True"
+}
+```
 ### Vulkan
 ```json
 {
@@ -45,8 +48,39 @@
 	"FFlagDebugGraphicsPreferD3D11FL10": "True"
 }
 ```
+### DX11
+```json
+{
+	"FFlagDebugGraphicsPreferD3D11": "True"
+}
+```
 # Graphical Settings <sup>& other stuff</sup>
-### ESP1
+### idk
+```json
+{
+	"DFFlagDebugEnableStreamingSolverVisualization": "True"
+}
+```
+### Alternate Graphics Quality Selector
+###### 1-21
+```json
+{
+	"FFlagFixGraphicsQuality": "True"
+}
+```
+### Disable Shadows
+```json
+{
+	"FIntRenderShadowIntensity": "0"
+}
+```
+### Set Fps Limit
+```json
+{
+	"DFIntTaskSchedulerTargetFps": "9999"
+}
+```
+### Enables Network Debug Tracker menu
 ##### Instructions: CTRL+F8
 ###### it's over.
 ```json
@@ -54,9 +88,8 @@
 	"DFFlagDebugEnableInterpolationVisualizer": "True"
 }
 ```
-### ESP2
+### Humanoid Outline
 ##### Draws an outline around every part and every humanoid
-###### could we revoke invites in rgc
 ```json
 {
 	"DFFlagDebugDrawBroadPhaseAABBs": "False"
@@ -126,6 +159,7 @@ High
 }
 ```
 ### Disables fade in and fade out animation every light update
+###### changes fade in ms!!
 ```json
 {
 	"FIntRenderLocalLightFadeInMs": "0"
@@ -184,7 +218,8 @@ High
 	"FFlagNewLightAttenuation": "True"
 }
 ```
-### Combine with [Lighting Attenuation](https://github.com/devstacking/Epic-Fast-Flags-List#lighting-attenuation) for better vision
+### Enable GPULightCulling
+###### Combine with [Lighting Attenuation](https://github.com/devstacking/Epic-Fast-Flags-List#lighting-attenuation) for better vision
 ```json
 {
 	"FFlagFastGPULightCulling3": "True"
@@ -236,6 +271,30 @@ High
 	"FFlagEnableAudioOutputDevice": "False",
 	"FIntV1MenuLanguageSelectionFeaturePerMillageRollout": "0",
 	"FFlagEnableAccessibilitySettingsInExperienceMenu2": "False"
+}
+```
+### Hides gui
+```json
+{
+	"FFlagDebugAdornsDisabled": "True"
+}
+```
+### Dont Render UI
+```json
+{
+	"FFlagDebugDontRenderUI": "True"
+}
+```
+### V3 Menu
+```json
+{
+	"FFlagEnableV3MenuABTest3": "True"
+}
+```
+### Enable Audio Controller
+```json
+{
+	"FFlagTrackerLodControllerDebugUI": "True"
 }
 ```
 ### Disable Autocomplete
@@ -341,7 +400,8 @@ High
 	"FIntScrollWheelDeltaAmount": "140"
 }
 ```
-### Surf the web inside of Roblox!
+### Surf the web inside of Roblox
+###### Click the Beta badge or the 13+ badge to open the webview browser.
 ```json
 {
 	"FFlagTopBarUseNewBadge": "True",
@@ -441,8 +501,8 @@ High
 ###### default: [Min 7 Max 80]
 ```json
 {
-	"VoiceChatRollOffMinDistance": "9999",
-	"DFIntVoiceChatRollOffMaxDistance": "99999"
+	"DFIntVoiceChatRollOffMinDistance": "7",
+	"DFIntVoiceChatRollOffMaxDistance": "80"
 }
 ```
 ### Disable In-Game Purchases
@@ -457,9 +517,7 @@ High
 	"FFlagDebugForceChatDisabled": "True"
 }
 ```
-### Stops the game from modifying sound, such as adding suppressor sounds 
-###### I think this limits audios playing. My value for this is 100
-###### Default value 8
+### Limit audios that are being played
 ```json
 {
 	"DFIntMaxLoadableAudioChannelCount": "1"
@@ -496,7 +554,7 @@ High
 	"FFlagOverridePlayerVerifiedBadge": "True"
 }
 ```
-### Cool Stuff
+### Applies cool colors to Unthemed Stuff
 ```json
 {
 	"FFlagDebugDisplayUnthemedInstances": "True"
@@ -521,43 +579,59 @@ High
 }
 ```
 ### Gray avatar
+###### clientsided
 ```json
 {
 	"FFlagFailsafeHumanoid_3": "True"
 }
 ```
-### Automatically unmutes your mic when you join a game with voice chat
+### Automatically unmutes your mic on join
 ```json
 {
 	"FFlagDebugDefaultChannelStartMuted": "False"
 }
 ```
-### Shows what you type 
-###### [12/13/2023]
+### Overlay that shows what you type 
 ```json
 {
 	"FFlagDebugTextBoxServiceShowOverlay": "True"
 }
 ```
 ### Disable Output Device
+###### useless settings ngl
 ```json
 {
-	"FFlagEnableAudioOutputDevice": "True"
+	"FFlagEnableAudioOutputDevice": "False"
 }
 ```
 ### opt-out Experience Language
+###### Removes the Experience Language option in settings
 ```json
 {
 	"FIntV1MenuLanguageSelectionFeaturePerMillageRollout": "0"
 }
 ```
 ### Exclusive Fullscreen
+###### Alt + Delete
 ```json
 {
 	"FFlagHandleAltEnterFullscreenManually": "False"
 }
 ```
-
+### Lets you change the zoom out limit
+###### infinite zoom out!!
+```json
+{
+	"FIntCameraMaxZoomDistance": "9999"
+}
+```
+### Limits number of animations being played
+###### infinite zoom out!!
+```json
+{
+	"DFIntMaxActiveAnimationTracks": "0"
+}
+```
 # Links
 ### [Make Your Own Custom Roblox Textures](https://github.com/GoingCrazyDude/roblox-custom-textures/blob/main/README.md) *[Github Repo Link]*
 ### [MEGA FAG LIST](https://discord.com/channels/1099468797410283540/1139962301991104582/1170417533355036712) *[Bloxstrap Server]*
