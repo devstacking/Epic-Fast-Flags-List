@@ -485,6 +485,42 @@ High
 	"DFIntDataSenderRate": "-1"
 }
 ```
+### 9. Freezes character in any state, can cause crashes, basically stacks input data
+```json
+{
+	"FFlagSimIslandizerManager": "False"
+}
+```
+### Spin when moving
+```json
+{
+	"DFIntRunningBaseOrientationP": "-14"
+}
+```
+### Spin when falling
+```json
+{
+	"DFIntRunningBaseOrientationP": "-14"
+}
+```
+### Makes character upside down
+```json
+{
+	"DFIntFreeFallBalanceP": "-9999"
+}
+```
+### Makes character ragdoll forever
+```json
+{
+	"DFIntGettingUpBalanceP": "0"
+}
+```
+### Fake Lag
+```json
+{
+	"DFIntS2PhysicsSenderRate": "1"
+}
+```
 ### Noclip 1
 ```json
 {
